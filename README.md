@@ -16,6 +16,8 @@ yarn build
 
 ## Publish
 
+Be sure to change `private` to `false` in the package.json.
+
 ```bash
 yarn build
 ```
@@ -24,9 +26,6 @@ yarn build
 npm version patch
 ```
 
-```````bash
-npm patch
-
-``````bash
+```bash
 npm publish --access public
-```````
+```

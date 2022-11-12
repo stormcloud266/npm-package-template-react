@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import { Example } from "./components/Example";
+import { Example } from './components/Example'
 
-function App() {
-  return <Example />;
+const App = () => {
+  return <Example example="Example" />
 }
 
-export default App;
+export default App

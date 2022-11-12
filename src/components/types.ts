@@ -1,1 +1,3 @@
-export interface ExampleProps {}
+export interface ExampleProps {
+  example: string
+}

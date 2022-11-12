@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import clsx from "clsx";
-import { container } from "./style.css";
-import { ExampleProps } from "./types";
+// import clsx from 'clsx'
+import { container } from './style.css'
+import { ExampleProps } from './types'
 
-export const Example = ({}: ExampleProps) => {
-  return <div className={container}>Example</div>;
-};
+export const Example = ({ example }: ExampleProps) => {
+  return <div className={container}>{example}</div>
+}

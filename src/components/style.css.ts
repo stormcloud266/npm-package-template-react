@@ -4,7 +4,7 @@ export const exampleVar = createVar()
 
 export const colors = style({
   vars: {
-    [exampleVar]: '#abfe2c'
+    [exampleVar]: 'pink'
   }
 })
 
@@ -13,7 +13,7 @@ export const container = style({
 
   selectors: {
     '&:hover, &:focus': {
-      color: 'blue'
+      color: 'green'
     }
   }
 })

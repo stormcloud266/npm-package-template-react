@@ -1,4 +1,4 @@
-import { resolve } from 'node:path'
+import { resolve } from 'path'
 
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 import react from '@vitejs/plugin-react'
@@ -14,18 +14,18 @@ export default defineConfig(() => ({
     vanillaExtractPlugin(),
     tsConfigPaths(),
     dts({
-      include: ['src/components'],
-    }),
+      include: ['src/components']
+    })
   ],
   build: {
     lib: {
       entry: resolve('src', 'components/index.ts'),
-      name: 'LensShareButton',
+      name: 'Example',
       formats: ['es', 'cjs'],
-      fileName: (format) => `react-lens-share-button.${format}.js`,
+      fileName: (format) => `npm-package-template.${format}.js`
     },
     rollupOptions: {
-      external: [...Object.keys(packageJson.peerDependencies)],
-    },
-  },
+      external: [...Object.keys(packageJson.peerDependencies)]
+    }
+  }
 }))
